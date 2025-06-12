@@ -1,8 +1,5 @@
 # Digital Experience Platform for ABC Racing Company
 
-**By:** Mahantesh Chatter  
-**Ph:** 968605406
-
 ---
 
 ## 1. Executive Summary
@@ -23,29 +20,29 @@ This case study proposes a high-performance, highly accessible, and globally ada
 
 ## 2. Assumptions
 
-### 1. User Personas
+### 2.1. User Personas
 
 - **New-age fans:** Expect rich media, social interactivity, mobile-first design
 - **Aging fan base:** Prefer simpler navigation, accessible design, traditional information like fixtures and rankings
 - **Global audience:** Multilingual, region-specific interests and themes
 
-### 2. Device & Network Conditions
+### 2.2. Device & Network Conditions
 
 - Must perform well on mobile devices, over 3G/4G
 - Desktop/laptop still relevant for older users
 - Support required for both modern and legacy browsers (IE7+)
 
-### 3. Content Expectations
+### 2.3. Content Expectations
 
 - Dynamic content: race-day updates, high-res photos, videos, fan polls
 - Bookmarking, offline viewing, and shareable snippets are essential
 
-### 4. Traffic & Growth
+### 2.4. Traffic & Growth
 
 - High concurrent usage during race days
 - Expected expansion to e-commerce and digital collectibles in the future
 
-### 5. Delivery Approach
+### 2.5. Delivery Approach
 
 - Agile, cross-functional team with strong DevOps culture
 - Frequent releases, AB testing, analytics-driven iteration
@@ -86,14 +83,14 @@ Key Features:
 
 ## 4. Architecture
 
-### 4.1 Front-End Architecture (Mandatory)
+### 4.1 Front-End Architecture
 
 The front-end will follow a **component-based SPA model**, designed for **separation of concerns**, **extensibility**, and **performance**.
 
 ![image](https://github.com/user-attachments/assets/216ed506-2a63-4292-a844-1f737ee21d0b)
 
 
-### a) Core Principles
+#### a) Core Principles
 
 - **Separation of concerns**: UI (components), State (Redux), Services (API handlers), Utilities (shared logic)
 - **Maintainability**: Modular folder structure, lazy loading, and atomic design pattern
@@ -375,6 +372,7 @@ export function TopRacers() {
   );
 }
 ```
+Refer : https://github.com/mahanteshtricon/abc-racing/blob/app/abc-racing/src/features/TopRacers/TopRacers.tsx
 
 This vertical could be plugged into the homepage or racer profile page, and customized further by region (local language, units, theme).
 
